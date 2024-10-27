@@ -1,0 +1,22 @@
+ros2_ws/
+└── src/
+    ├── motor_controller/           # Controle dos motores
+    ├── encoder_publisher/          # Publicação dos dados dos encoders
+    ├── kinect_sensor/              # Nodo para lidar com o Kinect
+    ├── diff_drive_controller/      # Controlador diferencial (ros2_control)
+    └── nav2_bringup/               # Configurações e mapas para Nav2
+'diff_drive_controller = diff_drive_controller.diff_drive_controller_node:main',
+Motor Esquerdo:
+
+    PWM: GPIO 12 (PWM0)
+    IN1: GPIO 5
+    IN2: GPIO 6
+
+Motor Direito:
+
+    PWM: GPIO 13 (PWM1)
+    IN3: GPIO 19
+    IN4: GPIO 26
+
+Encoder Esquerdo: GPIO 17
+Encoder Direito: GPIO 27
